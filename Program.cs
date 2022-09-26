@@ -7,12 +7,13 @@ namespace BinaryTree
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            
             Node test = new Node(3);
+            test.addNode(4);
             test.addNode(5);
-            test.addNode(6);
-            test.printTree();
-
-            Console.WriteLine("\n\n" + test.GetHeight() + " " + test.GetBalance());
+            Console.WriteLine("\n\nRoot node height: " + test.GetRootNode().GetHeight() + "\nRoot node balance: " + test.GetRootNode().GetBalance());
+            test.LeftRotate();
+            Console.WriteLine("\n\nRoot node height: " + test.GetRootNode().GetHeight() + "\nRoot node balance: " + test.GetRootNode().GetBalance());
         }
     }
 }
