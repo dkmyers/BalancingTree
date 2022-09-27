@@ -395,6 +395,3 @@ namespace BinaryTree
         }
     }//end Node definition
 }
-
-//Added: auto-rotation when nodes were imbalanced
-//Added: functionality to detect lowest imbalanced node, so larger trees still function
