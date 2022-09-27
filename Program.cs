@@ -9,11 +9,15 @@ namespace BinaryTree
             Console.WriteLine("Hello World!");
             
             Node test = new Node(3);
-            test.addNode(4);
+            test.addNode(8);
             test.addNode(5);
-            Console.WriteLine("\n\nRoot node height: " + test.GetRootNode().GetHeight() + "\nRoot node balance: " + test.GetRootNode().GetBalance());
-            test.LeftRotate();
-            Console.WriteLine("\n\nRoot node height: " + test.GetRootNode().GetHeight() + "\nRoot node balance: " + test.GetRootNode().GetBalance());
+
+            test.PrintNodeInfo();
+            test.parent.PrintNodeInfo();
+            test.parent.right.PrintNodeInfo();
+            
+            test.GetRootInfo();
+            
         }
     }
 }
